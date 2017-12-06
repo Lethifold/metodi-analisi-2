@@ -15,7 +15,7 @@
 \begin{document}
 	\section*{Integrazone}
 	
-		\subsection*{IIIIIIntegrali doppi}
+		\subsection*{Integrali doppi}
 			Gli Integrali doppi su un certo insieme $ \mathcal{D} $ (misurabile) permettono di trovare
 			\[ \iint_{\mathcal{D}} f(x,y)dxdy \; = \; \text{Volume racchiuso tra la funzione integranda ($ f(x,y) $) e il piano $ xOy $} \]
 			Nel caso in cui si abbia $ f(x,y) = 1 $ allora 
@@ -25,22 +25,22 @@
 				\begin{enumerate}
 					\item Disegno approssimativamente il dominio d'integrazione ragionando prima su 
 					\item Svolgo prima l'integrale della funzione in $ dx $ immaginando che la variabile $ y $ sia una costante 
-					\item Poi integro il risultato della prima integrazione in $ dy $. Da questo passaggio � vincolante ottenere un valore che non dipenda dalle due variabili $ dx \; dy $
+					\item Poi integro il risultato della prima integrazione in $ dy $. Da questo passaggio ï¿½ vincolante ottenere un valore che non dipenda dalle due variabili $ dx \; dy $
 				\end{enumerate}
 				\[ \iint_{\mathcal{D}} f(x,y) = \int_{y_{A}}^{y_{B}} \Big(\int_{x_{A}}^{x_{B}}f(x,y) dx\Big) dy \]
 				\subsubsection{Per verticali}
 				\begin{enumerate}
 					\item Disegno approssimativamente il dominio d'integrazione ragionando prima su 
 					\item Svolgo prima l'integrale della funzione in $ dy $ immaginando che la variabile $ x $ sia una costante 
-					\item Poi integro il risultato della prima integrazione in $ dx $. Da questo passaggio � vincolante ottenere un valore che non dipenda dalle due variabili $ dx \; dy $
+					\item Poi integro il risultato della prima integrazione in $ dx $. Da questo passaggio ï¿½ vincolante ottenere un valore che non dipenda dalle due variabili $ dx \; dy $
 				\end{enumerate}
 				\[ \iint_{\mathcal{D}} f(x,y) = \int_{x_{A}}^{x_{B}} \Big(\int_{y_{A}}^{y_{B}}f(x,y) dy\Big) dx \]
 				
 		\subsection*{Integrali tripli}
-		Nel caso di integrali tripli, l'integrazione permette, come nel caso degli integrali doppi, di ricavare un volume, tuttavia in questo caso l'integrale rappresenter� un volume non pi� in $ \mathbb{R}^{3} $, bens� in $ \mathbb{R}^{4} $
-		Questo tipo di integrali pu� essere svolto in due modi
+		Nel caso di integrali tripli, l'integrazione permette, come nel caso degli integrali doppi, di ricavare un volume, tuttavia in questo caso l'integrale rappresenterï¿½ un volume non piï¿½ in $ \mathbb{R}^{3} $, bensï¿½ in $ \mathbb{R}^{4} $
+		Questo tipo di integrali puï¿½ essere svolto in due modi
 			\subsubsection{Per fili}
-			Per immaginarsi l'integrazione per strati � utile pensare di trovare prima il volume di uno spaghetto verticale infinitamente sottile che � lungo esattamente quanto il contenitore dentro al quale si trova, ovvero l'insieme $\mathcal{P}$ e poi di sommare tutti gli spaghetti nel contenitore per trovare il volume del contenitore.
+			Per immaginarsi l'integrazione per strati ï¿½ utile pensare di trovare prima il volume di uno spaghetto verticale infinitamente sottile che ï¿½ lungo esattamente quanto il contenitore dentro al quale si trova, ovvero l'insieme $\mathcal{P}$ e poi di sommare tutti gli spaghetti nel contenitore per trovare il volume del contenitore.
 				\begin{enumerate}
 					\item Integro la funzione in $ dz $ tra gli estremi dell'insieme $ \mathbb{P} $
 					\item Integro i fili sulla superficie di base $ \mathcal{B} $ dell'insieme dell'insieme di integrazione.
@@ -51,16 +51,16 @@
 			\subsubsection{Per strati}
 			In questo procedimento ci si deve immaginare di trovare prima l'area di uno strato generico all'interno dell'insieme di integrazione e poi immagino di sommare tutti gli strati in modo di ottenere tutto il volume dell'insieme $ \mathbb{P} $
 				\begin{enumerate}
-					\item Per prima cosa � necessario trovare un'altezza massima e una minima in cui sia possibile trovare una superficie orizzontale.
-					\item Dopo � necessario calcolare l'area di un generico strato
-					\item In fine � sufficiente integrare tutti gli strati tra l'altezza massima e la minima.
+					\item Per prima cosa ï¿½ necessario trovare un'altezza massima e una minima in cui sia possibile trovare una superficie orizzontale.
+					\item Dopo ï¿½ necessario calcolare l'area di un generico strato
+					\item In fine ï¿½ sufficiente integrare tutti gli strati tra l'altezza massima e la minima.
 					
 					\[ \iiint_{\mathcal{P}} f(x,y,z) dxdydz \; = \; \int_{z_{min}}^{z_{max}} \Big(\iint_{\mathcal{B}} f(x,y,z) dxdy\Big)dz \]
 					
 				\end{enumerate}
 		
 		\subsection*{Applicazioni alla fisica}
-		Definendo la densit� di massa $ \mu (x,y,z) $ di $\mathcal{D}\subseteq \mathbb{R}^{3}$, allora si possono ricavare alcune grandezze fisiche.
+		Definendo la densitï¿½ di massa $ \mu (x,y,z) $ di $\mathcal{D}\subseteq \mathbb{R}^{3}$, allora si possono ricavare alcune grandezze fisiche.
 			\subsubsection{Massa Totale}
 			\[ \mathcal{M}(\mathcal{D})= \iiint_{\mathcal{D}} \mu(x,y,z) dx dy dz \]
 			
@@ -87,7 +87,7 @@
 				z=cos(\varphi)
 			\end{cases} $
 			\\ \\
-			Lo jacobiano di questa trasformazione � $ \mathcal{J} \mathcal{T} = \rho sin(\varphi) $
+			Lo jacobiano di questa trasformazione ï¿½ $ \mathcal{J} \mathcal{T} = \rho sin(\varphi) $
 			
 				\subparagraph{Casi particolarmente favorevoli}
 				
@@ -99,7 +99,7 @@
 			z=t
 			\end{cases} $
 			\\ \\
-			Lo jacobiano di questa trasformazione � $ \mathcal{J} \mathcal{T} =\rho $
+			Lo jacobiano di questa trasformazione ï¿½ $ \mathcal{J} \mathcal{T} =\rho $
 			
 				\subparagraph{Casi particolarmente favorevoli}
 		
@@ -152,7 +152,7 @@
 		\subsection*{Teoremi relativi all'integrazione}
 		
 			\subsubsection{Guldino 1}
-			Il volume di un solido di rotazione D � uguale all'area della sezione meridiana S moltiplicata per la lunghezza della circonferenza descritta dal baricentro di S attorno all'asse di rotazione.
+			Il volume di un solido di rotazione D ï¿½ uguale all'area della sezione meridiana S moltiplicata per la lunghezza della circonferenza descritta dal baricentro di S attorno all'asse di rotazione.
 			
 			\subparagraph{Condizioni}
 				\begin{itemize}
@@ -163,7 +163,7 @@
 			\[ Volume(D) = \iiint_{\mathcal{P}}dxdydz = 2\pi y_{G} A(S) \]
 			
 			\subsubsection{Guldino 2}
-			La superficie di un solido di rotazione � uguale alla lunghezza dell'arco generatore moltiplicato per la circonferenza che descrive il baricentro intorno all'asse di rotazione.
+			La superficie di un solido di rotazione ï¿½ uguale alla lunghezza dell'arco generatore moltiplicato per la circonferenza che descrive il baricentro intorno all'asse di rotazione.
 			
 			\subparagraph{Condizioni}
 				\begin{itemize}
@@ -179,7 +179,7 @@
 					\begin{itemize}
 						\item Sia $ \mathbf{F}(x,y) = (f_{1}(x,y),f_{2}(x,y)) $ un campo vettoriale di classe $C^{1} (\Omega)$ con $\Omega \subseteq \mathbb{R}^{2}$
 						\item Sia A un aperto limitato contenuto in $ \Omega $
-						\item La frontiera di A � il sostegno di un arco chiuso, semplice e regolare a tratti percorso in verso antiorario.
+						\item La frontiera di A ï¿½ il sostegno di un arco chiuso, semplice e regolare a tratti percorso in verso antiorario.
 					\end{itemize}
 			
 			\subparagraph{Teorema}
@@ -190,8 +190,8 @@
 			\subsubsection{Gauss}
 				\subparagraph{Condizioni}
 					\begin{itemize}
-						\item $ \mathbf{F} $ � un campo vettoriale definito in un aperto $ \Omega \in \mathbb{R}^{3} $
-						\item Sia $ \Omega_{0} $ un aperto limitato la cui frontiera � $ \delta \Omega_{0} $
+						\item $ \mathbf{F} $ ï¿½ un campo vettoriale definito in un aperto $ \Omega \in \mathbb{R}^{3} $
+						\item Sia $ \Omega_{0} $ un aperto limitato la cui frontiera ï¿½ $ \delta \Omega_{0} $
 					\end{itemize}
 				\subparagraph{Teorema}
 				\[ \int_{\delta \Omega_{0}} \mathbf{F} \cdot \mathbf{n} dS = \int_{\Omega_{0}} div(\mathbf{F}) dxdydz \]
@@ -202,8 +202,8 @@
 				\begin{itemize}
 					\item $\mathbf{F}$ patto costituito dal sostegno po vettoriale definito in un $ \Omega \in \mathbb{R}^{3} $
 					\item Sia K il compatto costituito dal sostegno di un arco chiuso, semplice e regolare a tratti $ \gamma $ e dal suo interno.
-					\item $ \gamma $ � orientata in modo da lasciare alla sinistra il suo interno
-					\item Sia $ \sigma_{0} = \sigma(K) $ la calotta relativa a K e $ \delta \sigma_{0} $ l'arco detto bordo della calotta $ \sigma_{0} $  il cui verso di percorrenza � dato dalla regola della mano destra  rispetto all normale alla calotta
+					\item $ \gamma $ ï¿½ orientata in modo da lasciare alla sinistra il suo interno
+					\item Sia $ \sigma_{0} = \sigma(K) $ la calotta relativa a K e $ \delta \sigma_{0} $ l'arco detto bordo della calotta $ \sigma_{0} $  il cui verso di percorrenza ï¿½ dato dalla regola della mano destra  rispetto all normale alla calotta
 				\end{itemize}
 				\subparagraph{Teorema}
 				\[ \int_{\delta \sigma_{0}} \mathbf{F}(P) \cdot d \mathbf{P} = \int_{ \sigma_{0}} rot(\mathbf{F}) \cdot d S\]
@@ -215,17 +215,17 @@
 	\section*{Campi conservativi}
 	
 			Un campo vettoriale $ \mathbf{F} $, definito in $ \Omega $, si dice conservativo se 
-			esiste una funzione scalare $ \varphi $ tale che per ogni $ x \in \Omega $ si abbia \[ \mathbf{F}(\mathbf{x}) = \nabla \varphi(\mathbf{x})\] In cui $ \varphi(\mathbf{x}) $ � detta funzione potenziale
+			esiste una funzione scalare $ \varphi $ tale che per ogni $ x \in \Omega $ si abbia \[ \mathbf{F}(\mathbf{x}) = \nabla \varphi(\mathbf{x})\] In cui $ \varphi(\mathbf{x}) $ ï¿½ detta funzione potenziale
 			
 			\subsection*{Condizioni}
-			Affinch� un campo vettoriale $ \mathbf{F} $ sia conservativo e che ammetta quindi un potenziale, � necessario che:
+			Affinchï¿½ un campo vettoriale $ \mathbf{F} $ sia conservativo e che ammetta quindi un potenziale, ï¿½ necessario che:
 			\begin{itemize}
-				\item Se $ \gamma $ � un arco chiuso e regolare a tratti, allora $ \int_{\gamma } \mathbf{F} \cdot d\mathbb{P}  =  0$
+				\item Se $ \gamma $ ï¿½ un arco chiuso e regolare a tratti, allora $ \int_{\gamma } \mathbf{F} \cdot d\mathbb{P}  =  0$
 				\item il $ rot(\mathbf{F}) = \textbf{0} $ e che $ \mathbf{F} $ sia definito su di un insieme \\ \textit{\textbf{semplicemente connesso}}
 			\end{itemize}
-			Se un campo vettoriale $ \mathbf{F} $ � conservativo, allora:
+			Se un campo vettoriale $ \mathbf{F} $ ï¿½ conservativo, allora:
 			\begin{itemize}
-				\item Se $ \gamma $ � un arco chiuso e regolare a tratti, allora $ \int_{\gamma } \mathbf{F} \cdot d\mathbb{P}  =  0$
+				\item Se $ \gamma $ ï¿½ un arco chiuso e regolare a tratti, allora $ \int_{\gamma } \mathbf{F} \cdot d\mathbb{P}  =  0$
 				\item $ rot(\mathbf{F}) = \textbf{0} $
 			\end{itemize}
 			\subsection*{Ricerca del potenziale}
