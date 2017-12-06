@@ -1,4 +1,2 @@
 # Metodi risolutivi per Analisi II
-
-Questa è la mia repo.
-# Ho cambiato idea
+Questo manuale serve per aiutare gli studenti in difficiltà.
