@@ -25,7 +25,24 @@
 				\begin{enumerate}
 					\item Disegno approssimativamente il dominio d'integrazione ragionando prima su 
 					\item Svolgo prima l'integrale della funzione in $ dx $ immaginando che la variabile $ y $ sia una costante 
+					\item Poi integro il risultato della prima integrazione in $ dy $. Da questo passaggio è vincolante ottenere un valore che non dipenda dalle due variabili $ dx \; dy $
+				\end{enumerate}
+				\[ \iint_{\mathcal{D}} f(x,y) = \int_{y_{A}}^{y_{B}} \Big(\int_{x_{A}}^{x_{B}}f(x,y) dx\Big) dy \]
+				\subsubsection{Per verticali}
+				\begin{enumerate}
+					\item Disegno approssimativamente il dominio d'integrazione ragionando prima su 
+					\item Svolgo prima l'integrale della funzione in $ dy $ immaginando che la variabile $ x $ sia una costante 
+					\item Poi integro il risultato della prima integrazione in $ dx $. Da questo passaggio è vincolante ottenere un valore che non dipenda dalle due variabili $ dx \; dy $
+				\end{enumerate}
+				\[ \iint_{\mathcal{D}} f(x,y) = \int_{x_{A}}^{x_{B}} \Big(\int_{y_{A}}^{y_{B}}f(x,y) dy\Big) dx \]
 				
+		\subsection*{Integrali tripli}
+		Nel caso di integrali tripli, l'integrazione permette, come nel caso degli integrali doppi, di ricavare un volume, tuttavia in questo caso l'integrale rappresenterà un volume non più in $ \mathbb{R}^{3} $, bensì in $ \mathbb{R}^{4} $
+		Questo tipo di integrali può essere svolto in due modi
+			\subsubsection{Per fili}
+			Per immaginarsi l'integrazione per strati è utile pensare di trovare prima il volume di uno spaghetto verticale infinitamente sottile che è lungo esattamente quanto il contenitore dentro al quale si trova, ovvero l'insieme $\mathcal{P}$ e poi di sommare tutti gli spaghetti nel contenitore per trovare il volume del contenitore.
+				\begin{enumerate}
+					\item Integro la funzione in $ dz $ tra gli estremi dell'insieme $ \mathbb{P} $
 					\item Integro i fili sulla superficie di base $ \mathcal{B} $ dell'insieme dell'insieme di integrazione.
 					
 					\[ \iiint_{\mathcal{P}} f(x,y,z) dxdydz \; = \; \iint_{\mathcal{B}} \Big(\int_{z_{A}}^{z_{B}} f(x,y,z)\Big) dxdy\]
