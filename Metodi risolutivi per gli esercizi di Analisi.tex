@@ -4,6 +4,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
 \author{Fabio Baldo}
 \title{Procedimenti risolutivi per esercizi per Analisi II}
 
@@ -131,8 +132,9 @@
 		
 		\subsection*{Integrali \textbf{superficiali}}
 			\begin{enumerate}
-				\item Parametrizzo la superficie sulla quale voglio integrare
-				\item Determino la normale alla superficie $\norm{\mathbf{N}(u,v)}$
+				\item Parametrizzo la superficie $ \Sigma $ sulla quale voglio integrare
+				\item Determino la normale alla superficie $\norm{\mathbf{N}(u,v)} $ sapendo che \\
+                \[ \mathbf{N}(u,v) = det \left(\begin{array}{ccc} i & j & k\\ \pdv{\Sigma_{i} }{}{u} & \pdv{\Sigma_{j}}{}{u} & \pdv{\Sigma_{k}}{}{u} \\ \pdv{\Sigma_{i}}{}{v} & \pdv{\Sigma_{j}}{}{v} & \pdv{\Sigma_{k}}{}{v} \end{array}\right) \]
 				\item Calcola la composta $f(\mathbf{\sigma} (u,v))$
 				\item Calcolo l'integrale secondo la relazione:
 			\end{enumerate}
