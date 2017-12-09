@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper]{report}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -37,7 +37,7 @@
 				\[ \iint_{\mathcal{D}} f(x,y) = \int_{x_{A}}^{x_{B}} \Big(\int_{y_{A}}^{y_{B}}f(x,y) dy\Big) dx \]
 				
 		\subsection*{Integrali tripli}
-		Nel caso di integrali tripli, l'integrazione permette, come nel caso degli integrali doppi, di ricavare un volume, tuttavia in questo caso l'integrale rappresenterà un volume non più in $ \mathbb{R}^{3} $, bensì in $ \mathbb{R}^{4} $
+		Nel caso di integrali tripli, l'integrazione permette, come nel caso degli integrali doppi, di ricavare un volume, tuttavia in questo caso l'integrale rappresenterà  un volume non più in $ \mathbb{R}^{3} $, bensìin $ \mathbb{R}^{4} $
 		Questo tipo di integrali può essere svolto in due modi
 			\subsubsection{Per fili}
 			Per immaginarsi l'integrazione per strati è utile pensare di trovare prima il volume di uno spaghetto verticale infinitamente sottile che è lungo esattamente quanto il contenitore dentro al quale si trova, ovvero l'insieme $\mathcal{P}$ e poi di sommare tutti gli spaghetti nel contenitore per trovare il volume del contenitore.
@@ -60,7 +60,7 @@
 				\end{enumerate}
 		
 		\subsection*{Applicazioni alla fisica}
-		Definendo la densità di massa $ \mu (x,y,z) $ di $\mathcal{D}\subseteq \mathbb{R}^{3}$, allora si possono ricavare alcune grandezze fisiche.
+		Definendo la densità  di massa $ \mu (x,y,z) $ di $\mathcal{D}\subseteq \mathbb{R}^{3}$, allora si possono ricavare alcune grandezze fisiche.
 			\subsubsection{Massa Totale}
 			\[ \mathcal{M}(\mathcal{D})= \iiint_{\mathcal{D}} \mu(x,y,z) dx dy dz \]
 			
@@ -87,7 +87,7 @@
 				z=cos(\varphi)
 			\end{cases} $
 			\\ \\
-			Lo jacobiano di questa trasformazione ï¿½ $ \mathcal{J} \mathcal{T} = \rho sin(\varphi) $
+			Lo jacobiano di questa trasformazione è $ \mathcal{J} \mathcal{T} = \rho sin(\varphi) $
 			
 				\subparagraph{Casi particolarmente favorevoli}
 				
@@ -109,6 +109,7 @@
 			\begin{enumerate}
 				\item Parametrizzo la curva $ \gamma(t) $ sulla quale voglio calcolare l'integrale 
 				\item Calcolo la derivata $ \gamma ' (t) $della curva parametrizzata 
+                \item Calcolo la normale$ \norm{\gamma '(t)} $
 				\item Calcolo la funzione composta $ f(\gamma (t)) $
 				\item Determino gli estremi di integrazione
 				\item Calcolo l'integrale secondo la formula:
@@ -121,13 +122,12 @@
 		Data una curva e un campo vettoriale posso:
 			\begin{enumerate}
 				\item Parametrizzo la curva $ \gamma(t) $ sulla quale voglio calcolare l'integrale. 
-				\item Calcolo la derivata della curva parametrizzata $ \gamma ' (t) $
-				\item Calcolo il versore dato da $ \frac{\gamma '(t)}{\norm{\gamma '(t)}} $
+				\item Calcolo la derivata della curva parametrizzata $ \gamma ' (t) $ 
 				\item Calcolo la funzione composta $ \mathbf{F}(\gamma (t)) $
 				\item Calcolo l'integrale dato dalla relazione:
 				\end{enumerate}
 			
-		\[ \int_{a}^{b} \mathbf{F}(\gamma (t)) \cdot \frac{\gamma '(t)}{\norm{\gamma '(t)}} dt \]
+		\[ \int_{a}^{b} \mathbf{F}(\gamma (t)) \cdot \gamma '(t) dt \]
 		
 		\subsection*{Integrali \textbf{superficiali}}
 			\begin{enumerate}
@@ -163,7 +163,7 @@
 			\[ Volume(D) = \iiint_{\mathcal{P}}dxdydz = 2\pi y_{G} A(S) \]
 			
 			\subsubsection{Guldino 2}
-			La superficie di un solido di rotazione è uguale alla lunghezza dell'arco generatore moltiplicato per la circonferenza che descrive il baricentro intorno all'asse di rotazione.
+			La superficie di un solido di rotazione uguale alla lunghezza dell'arco generatore moltiplicato per la circonferenza che descrive il baricentro intorno all'asse di rotazione.
 			
 			\subparagraph{Condizioni}
 				\begin{itemize}
@@ -203,7 +203,7 @@
 					\item $\mathbf{F}$ patto costituito dal sostegno po vettoriale definito in un $ \Omega \in \mathbb{R}^{3} $
 					\item Sia K il compatto costituito dal sostegno di un arco chiuso, semplice e regolare a tratti $ \gamma $ e dal suo interno.
 					\item $ \gamma $ è orientata in modo da lasciare alla sinistra il suo interno
-					\item Sia $ \sigma_{0} = \sigma(K) $ la calotta relativa a K e $ \delta \sigma_{0} $ l'arco detto bordo della calotta $ \sigma_{0} $  il cui verso di percorrenza è dato dalla regola della mano destra  rispetto all normale alla calotta
+					\item Sia $ \sigma_{0} = \sigma(K) $ la calotta relativa a K e $ \delta \sigma_{0} $ l'arco detto bordo della calotta $ \sigma_{0} $  il cui verso di percorrenza è dato dalla regola della mano destra  rispetto alla normale alla calotta
 				\end{itemize}
 				\subparagraph{Teorema}
 				\[ \int_{\delta \sigma_{0}} \mathbf{F}(P) \cdot d \mathbf{P} = \int_{ \sigma_{0}} rot(\mathbf{F}) \cdot d S\]
@@ -228,7 +228,13 @@
 				\item Se $ \gamma $ è un arco chiuso e regolare a tratti, allora $ \int_{\gamma } \mathbf{F} \cdot d\mathbb{P}  =  0$
 				\item $ rot(\mathbf{F}) = \textbf{0} $
 			\end{itemize}
+		
 			\subsection*{Ricerca del potenziale}
+			Per trovare il potenziale di un campo conservativo si può ragionare in più modi:
+
+                \subsubsection{Metodo delle derivate parziali}
+                La definizione di potenziale di un campo vettoriale conservativo 
+				
 
 
 \end{document}
