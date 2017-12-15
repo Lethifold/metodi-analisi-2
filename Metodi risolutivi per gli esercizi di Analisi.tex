@@ -20,31 +20,31 @@
 			Gli Integrali doppi su un certo insieme $ \mathcal{D} $ (misurabile) permettono di trovare
 			\[ \iint_{\mathcal{D}} f(x,y)dxdy \; = \; \text{Volume racchiuso tra la funzione integranda ($ f(x,y) $) e il piano $ xOy $} \]
 			Nel caso in cui si abbia $ f(x,y) = 1 $ allora 
-			\[ \iint_{\mathcal{D}} f(x,y) dxdy \; = \; \text{ Area dell'insieme $\mathcal{D}$  }\]
-			I Procedimenti che permettono di calcolare gli integrali doppi sono due
+			\[ \iint_{\mathcal{D}} dxdy \; = \; \text{ Area dell'insieme $\mathcal{D}$  }\]
+			I procedimenti che permettono di calcolare gli integrali doppi sono due
 				\subsubsection{Per orizzontali}
 				\begin{enumerate}
-					\item Disegno approssimativamente il dominio d'integrazione ragionando prima su 
-					\item Svolgo prima l'integrale della funzione in $ dx $ immaginando che la variabile $ y $ sia una costante 
-					\item Poi integro il risultato della prima integrazione in $ dy $. Da questo passaggio è vincolante ottenere un valore che non dipenda dalle due variabili $ dx \; dy $
+					\item Disegno approssimativamente il dominio d'integrazione ragionando prima su
+					\item Svolgo prima l'integrale della funzione in $ dx $ immaginando che la variabile $ y $ sia una costante
+					\item Poi integro il risultato della prima integrazione in $ dy $. In questo passaggio è vincolante ottenere un valore che non dipenda dalle due variabili $ dx \; dy $.
 				\end{enumerate}
 				\[ \iint_{\mathcal{D}} f(x,y) = \int_{y_{A}}^{y_{B}} \Big(\int_{x_{A}}^{x_{B}}f(x,y) dx\Big) dy \]
 				\subsubsection{Per verticali}
 				\begin{enumerate}
-					\item Disegno approssimativamente il dominio d'integrazione ragionando prima su 
-					\item Svolgo prima l'integrale della funzione in $ dy $ immaginando che la variabile $ x $ sia una costante 
-					\item Poi integro il risultato della prima integrazione in $ dx $. Da questo passaggio è vincolante ottenere un valore che non dipenda dalle due variabili $ dx \; dy $
+					\item Disegno approssimativamente il dominio d'integrazione ragionando prima su
+					\item Svolgo prima l'integrale della funzione in $ dy $ immaginando che la variabile $ x $ sia una costante
+					\item Poi integro il risultato della prima integrazione in $ dx $. In questo passaggio è vincolante ottenere un valore che non dipenda dalle due variabili $ dx \; dy $.
 				\end{enumerate}
 				\[ \iint_{\mathcal{D}} f(x,y) = \int_{x_{A}}^{x_{B}} \Big(\int_{y_{A}}^{y_{B}}f(x,y) dy\Big) dx \]
 				
 		\subsection*{Integrali tripli}
-		Nel caso di integrali tripli, l'integrazione permette, come nel caso degli integrali doppi, di ricavare un volume, tuttavia in questo caso l'integrale rappresenterà  un volume non più in $ \mathbb{R}^{3} $, bensìin $ \mathbb{R}^{4} $
-		Questo tipo di integrali può essere svolto in due modi
+		Nel caso di integrali tripli, come per i doppi, l'integrazione permette di ricavare un ``volume'', tuttavia in questo caso l'integrale rappresenterà un ``volume'' non più in $ \mathbb{R}^{3} $, bensì in $ \mathbb{R}^{4} $. Dato che non è facile immaginarsi un volume in $\mathbb{R}^{4}$ è più congeniale pensare a $f(x,y,z)$ come una funzione che descrive l'andamento della massa nel solido e di voler calcolare la massa totale di quest'ultimo (cfr. \textit{Applicazioni alla fisica}).
+		Questo tipo di integrali può essere svolto in due modi.
 			\subsubsection{Per fili}
-			Per immaginarsi l'integrazione per strati è utile pensare di trovare prima il volume di uno spaghetto verticale infinitamente sottile che è lungo esattamente quanto il contenitore dentro al quale si trova, ovvero l'insieme $\mathcal{P}$ e poi di sommare tutti gli spaghetti nel contenitore per trovare il volume del contenitore.
+			Per immaginarsi l'integrazione per fili è utile pensare di trovare prima il volume di uno spaghetto verticale infinitamente sottile che è lungo esattamente quanto il contenitore dentro al quale si trova, ovvero l'insieme $\mathcal{P}$ e poi di sommare tutti gli spaghetti nel contenitore per trovare il volume del contenitore.
 				\begin{enumerate}
 					\item Integro la funzione in $ dz $ tra gli estremi dell'insieme $ \mathbb{P} $
-					\item Integro i fili sulla superficie di base $ \mathcal{B} $ dell'insieme dell'insieme di integrazione.
+					\item Integro i fili sulla superficie di base $ \mathcal{B} $ dell'insieme di integrazione.
 					
 					\[ \iiint_{\mathcal{P}} f(x,y,z) dxdydz \; = \; \iint_{\mathcal{B}} \Big(\int_{z_{A}}^{z_{B}} f(x,y,z)\Big) dxdy\]
 					
@@ -52,8 +52,8 @@
 			\subsubsection{Per strati}
 			In questo procedimento ci si deve immaginare di trovare prima l'area di uno strato generico all'interno dell'insieme di integrazione e poi immagino di sommare tutti gli strati in modo di ottenere tutto il volume dell'insieme $ \mathbb{P} $
 				\begin{enumerate}
-					\item Per prima cosa è necessario trovare un'altezza massima e una minima in cui sia possibile trovare una superficie orizzontale.
-					\item Dopo è necessario calcolare l'area di un generico strato
+					\item Per prima cosa è necessario trovare gli estremi massimo e minimo per cui si può trovare uno strato
+					\item Calcolare l'area di un generico strato
 					\item In fine è sufficiente integrare tutti gli strati tra l'altezza massima e la minima.
 					
 					\[ \iiint_{\mathcal{P}} f(x,y,z) dxdydz \; = \; \int_{z_{min}}^{z_{max}} \Big(\iint_{\mathcal{B}} f(x,y,z) dxdy\Big)dz \]
@@ -61,38 +61,36 @@
 				\end{enumerate}
 		
 		\subsection*{Applicazioni alla fisica}
-		Definendo la densità  di massa $ \mu (x,y,z) $ di $\mathcal{D}\subseteq \mathbb{R}^{3}$, allora si possono ricavare alcune grandezze fisiche.
+		Definendo la densità  di massa $ \mu (x,y,z) $ di $\mathcal{D}\subseteq \mathbb{R}^{3}$, allora si possono ricavare alcune grandezze fisiche.
 			\subsubsection{Massa Totale}
-			\[ \mathcal{M}(\mathcal{D})= \iiint_{\mathcal{D}} \mu(x,y,z) dx dy dz \]
+			\[ M(\mathcal{D})= \iiint_{\mathcal{D}} \mu(x,y,z) dx dy dz \]
 			
 			\subsubsection{Baricentro}
-			\[ x_{G}=\frac{\iiint_{\mathcal{D}} x \mu (x,y,x) dx dy dz}{ \mathcal{M}(\mathcal{D})} \]
-			\[ y_{G}=\frac{\iiint_{\mathcal{D}} y \mu (x,y,x) dx dy dz}{ \mathcal{M}(\mathcal{D})} \]
-			\[ z_{G}=\frac{\iiint_{\mathcal{D}} z \mu (x,y,x) dx dy dz}{ \mathcal{M}(\mathcal{D})} \]
+			\[ x_{G}=\frac{\iiint_{\mathcal{D}} x \mu (x,y,x) dx dy dz}{ M(\mathcal{D})} \]
+			\[ y_{G}=\frac{\iiint_{\mathcal{D}} y \mu (x,y,x) dx dy dz}{ M(\mathcal{D})} \]
+			\[ z_{G}=\frac{\iiint_{\mathcal{D}} z \mu (x,y,x) dx dy dz}{ M(\mathcal{D})} \]
 			
 			\subsubsection{Momento d'inerzia}
 			\[ \iiint_{\mathcal{D}} r^{2}(x,y,z) \mu(x,y,z) dx dy dz \]
 
 		\subsection*{Cambiamenti di coordinate}
 			\subsubsection{Polari piane}
-			$ \begin{cases} 
+			$ T: \begin{cases} 
 				x=cos(\theta) \\ 
 				y=sin(\theta)
 			\end{cases} $
 				\subparagraph{Casi particolarmente favorevoli}
 				Cerchio, corona circolare, "fetta di torta", "fetta di ciambella"
 			\subsubsection{Polari sferiche}
-			$ \begin{cases} 
+			$ T: \begin{cases} 
 				x=sin(\varphi)cos(\theta) \\ 
 				y=sin(\varphi)sin(\theta) \\
 				z=cos(\varphi)
 			\end{cases} $
 			\\ \\
-			Lo jacobiano di questa trasformazione è $ \mathcal{J} \mathcal{T} = \rho sin(\varphi) $
+			Lo jacobiano di questa trasformazione è $\mathcal{J}T=\rho sin(\varphi) $
 			
 				\subparagraph{Casi particolarmente favorevoli}
-				
-				
 			\subsubsection{Cilindriche}
 			$ \begin{cases} 
 			x=cos(\theta) \\ 
@@ -100,7 +98,7 @@
 			z=t
 			\end{cases} $
 			\\ \\
-			Lo jacobiano di questa trasformazione è $ \mathcal{J} \mathcal{T} =\rho $
+			Lo jacobiano di questa trasformazione è $\mathcal{J}T=\rho $
 			
 				\subparagraph{Casi particolarmente favorevoli}
 		
@@ -108,9 +106,9 @@
 		\subsection*{Integrali \textbf{curvilinei}}
 			Data una curva e una funzione scalare posso:
 			\begin{enumerate}
-				\item Parametrizzo la curva $ \gamma(t) $ sulla quale voglio calcolare l'integrale 
-				\item Calcolo la derivata $ \gamma ' (t) $della curva parametrizzata 
-                \item Calcolo la normale$ \norm{\gamma '(t)} $
+				\item Parametrizzo la curva $ \gamma(t) $ sulla quale voglio calcolare l'integrale
+				\item Calcolo la derivata $ \gamma ' (t) $della curva parametrizzata
+                \item Calcolo la normale $ \norm{\gamma '(t)} $
 				\item Calcolo la funzione composta $ f(\gamma (t)) $
 				\item Determino gli estremi di integrazione
 				\item Calcolo l'integrale secondo la formula:
