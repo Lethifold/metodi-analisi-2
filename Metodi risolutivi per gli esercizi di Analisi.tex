@@ -213,7 +213,7 @@
 
 	
 	\section*{Campi conservativi}
-	
+    
 			Un campo vettoriale $ \mathbf{F} $, definito in $ \Omega $, si dice conservativo se 
 			esiste una funzione scalare $ \varphi $ tale che per ogni $ x \in \Omega $ si abbia \[ \mathbf{F}(\mathbf{x}) = \nabla \varphi(\mathbf{x})\] In cui $ \varphi(\mathbf{x}) $ è detta funzione potenziale
 			
@@ -235,6 +235,24 @@
                 \subsubsection{Metodo delle derivate parziali}
                 La definizione di potenziale di un campo vettoriale conservativo 
 				
+    \section*{Serie numeriche}
+        
+                
+            \subsection*{Serie a termini positivi}
 
-
+                \subsubsection{Criterio del confronto}
+                Per poter dimostrare che una serie converge utilizzando il criterio del confronto è necessario trovare una serie (più facile) maggiorante della serie di partenza. Infatti il criterio permette di dimostrare la convergenza della serie di partenza nel caso in cui la serie maggiorante risulti essere convergente.
+                \subsubsection{Criterio del confronto asintotico}
+                Questo criterio permette di determinare la convergenza oppure divergenza di una serie nel caso in cui si trovi una serie con stesso ordine di grandezza della serie di partenza. In questo caso è intuitivo il fatto che entrambe le serie in analisi si comportino allo stesso modo.
+                \subsubsection{Criterio del rapporto}
+                Per poter determinare una convergenza oppure divergenza di una serie mediante questo criterio è necessario risolvere il limite seguente \[ \lim_{n \to \infty} \frac{a_{n+1}}{a_{n}} =l \] Nel caso in cui $ l < 1 $ la serie converge, mentre nel caso in cui $ l > 1 $ la serie diverge.
+                \subsubsection{Criterio della radice}
+                Questo criterio è molto simile al criterio del rapporto. Infatti è necessario anche in questo caso risolvere un limite \[ \lim_{n \to \infty} \sqrt[n]{a_{n}} = l \] Nel caso in cui $ l < 1 $ la serie converge, mentre nel caso in cui $ l > 1 $ la serie diverge.
+                \subsubsection{Criterio di McLaurin}
+                Data una serie necessariamente positiva, continua e decrescente. Ponendo $ f(n) = a_{n} $ allora si ha che la serie $ \sum_{n=1}^{\infty} a_{n} $ e l'integrale $ \int_{1}^{\infty} f(x)dx $ hanno lo stesso comportamento 
+                
+            \subsection*{Serie a termini di segno variabile}
+                
+                \subsubsection{Teorema della convergenza assoluta}
+                Se una serie è assolutamente convergente ovvero si ha la convergenza della serie $ \sum_{n=1}^{\infty} |a_{n}| $ allora la serie $ \sum_{n=1}^{\infty} a_{n} $ è anche convergente
 \end{document}
