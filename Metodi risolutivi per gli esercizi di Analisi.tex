@@ -147,7 +147,7 @@
 			\item Calcolo la composta $ \mathbf{F}(\mathbf{\sigma}(u,v)) $
 		\end{enumerate}
 		
-		\[  \int_{\mathbf{\sigma}} \mathbf{F} \cdot dS = \int_{K} \mathbf{F}(\mathbf{\sigma}(u,v)) \cdot \mathbf{N}(u,v) dudv\]
+		\[  \int_{\mathbf{\sigma}} \mathbf{F}(\vec{x}) \cdot dS = \int_{K} \mathbf{F}(\mathbf{\sigma}(u,v)) \cdot \mathbf{N}(u,v) dudv\]
 		
 		\subsection*{Teoremi relativi all'integrazione}
 		
@@ -184,29 +184,29 @@
 			
 			\subparagraph{Teorema}
 			
-			\[ \int_{\delta A} \mathbf{F} \cdot d \mathbf{P} = \iint_{A} \Big(\pdv{f_{2}}{}{x} - \pdv{f_{1}}{}{y}\Big) dxdy \]
+			\[ \int_{\delta A} \mathbf{F}(\vec{x}) \cdot d \mathbf{P} = \iint_{A} \Big(\pdv{f_{2}}{}{x} - \pdv{f_{1}}{}{y}\Big) dxdy \]
 			
 			
 			\subsubsection{Gauss}
 				\subparagraph{Condizioni}
 					\begin{itemize}
-						\item $ \mathbf{F} $ è un campo vettoriale definito in un aperto $ \Omega \in \mathbb{R}^{3} $
+						\item $ \mathbf{F}(\vec{x}) $ è un campo vettoriale definito in un aperto $ \Omega \in \mathbb{R}^{3} $
 						\item Sia $ \Omega_{0} $ un aperto limitato la cui frontiera è $ \delta \Omega_{0} $
 					\end{itemize}
 				\subparagraph{Teorema}
-				\[ \int_{\delta \Omega_{0}} \mathbf{F} \cdot \mathbf{n} dS = \int_{\Omega_{0}} div(\mathbf{F}) dxdydz \]
+				\[ \int_{\delta \Omega_{0}} \mathbf{F}(\vec{x}) \cdot \mathbf{n} dS = \int_{\Omega_{0}} div(\mathbf{F}(\vec{x})) dxdydz \]
 			
 			\subsubsection{Stokes}
 			
 				\subparagraph{Condizioni}
 				\begin{itemize}
-					\item $\mathbf{F}$ patto costituito dal sostegno po vettoriale definito in un $ \Omega \in \mathbb{R}^{3} $
+					\item Dato $\mathbf{F}(\vec{x})$ definito in un $ \Omega \in \mathbb{R}^{3} $
 					\item Sia K il compatto costituito dal sostegno di un arco chiuso, semplice e regolare a tratti $ \gamma $ e dal suo interno.
 					\item $ \gamma $ è orientata in modo da lasciare alla sinistra il suo interno
 					\item Sia $ \sigma_{0} = \sigma(K) $ la calotta relativa a K e $ \delta \sigma_{0} $ l'arco detto bordo della calotta $ \sigma_{0} $  il cui verso di percorrenza è dato dalla regola della mano destra  rispetto alla normale alla calotta
 				\end{itemize}
 				\subparagraph{Teorema}
-				\[ \int_{\delta \sigma_{0}} \mathbf{F}(P) \cdot d \mathbf{P} = \int_{ \sigma_{0}} rot(\mathbf{F}) \cdot d S\]
+				\[ \int_{\delta \sigma_{0}} \mathbf{F}(\vec{x})(P) \cdot d \mathbf{P} = \int_{ \sigma_{0}} rot(\mathbf{F}(\vec{x})) \cdot d S\]
 
 
 
@@ -214,26 +214,31 @@
 	
 	\section*{Campi conservativi}
     
-			Un campo vettoriale $ \mathbf{F} $, definito in $ \Omega $, si dice conservativo se 
-			esiste una funzione scalare $ \varphi $ tale che per ogni $ x \in \Omega $ si abbia \[ \mathbf{F}(\mathbf{x}) = \nabla \varphi(\mathbf{x})\] In cui $ \varphi(\mathbf{x}) $ è detta funzione potenziale
+			Un campo vettoriale $ \mathbf{F}(\vec{x}) $, definito in $ \Omega $, si dice conservativo se 
+			esiste una funzione scalare $ \varphi $ tale che per ogni $ x \in \Omega $ si abbia \[ \mathbf{F}(\vec{x}) = \nabla \varphi(\mathbf{x})\] In cui $ \varphi(\mathbf{x}) $ è detta funzione potenziale
 			
 			\subsection*{Condizioni}
-			Affinché un campo vettoriale $ \mathbf{F} $ sia conservativo e che ammetta quindi un potenziale, è necessario che:
+			Affinché un campo vettoriale $ \mathbf{F}(\vec{x}) $ sia conservativo è necessario che:
 			\begin{itemize}
-				\item Se $ \gamma $ è un arco chiuso e regolare a tratti, allora $ \int_{\gamma } \mathbf{F} \cdot d\mathbb{P}  =  0$
-				\item il $ rot(\mathbf{F}) = \textbf{0} $ e che $ \mathbf{F} $ sia definito su di un insieme \\ \textit{\textbf{semplicemente connesso}}
+                \item $ \mathbf{F}(\vec{x}) $ deve ammettere un potenziale $ \varphi $ tale che $ \mathbf{F}(\vec{x})= \nabla \varphi$
+				\item Se $ \gamma $ è un arco chiuso e regolare a tratti, allora $ \oint_{\gamma } \mathbf{F}(\vec{x}) \cdot d\mathbb{P}  =  0$
+				\item Il campo $ \mathbf{F}(\vec{x}) $ sia definito su di un insieme $ \Omega $ \textit{\textbf{semplicemente connesso}}, (nel quale una qualunque $ \gamma(t) $) chiusa racchiuda un sottoinsieme totalmente contenuto in $ \Omega $ e che $ rot(\mathbf{F}(\vec{x})) = \textbf{0} $ \\ 
 			\end{itemize}
-			Se un campo vettoriale $ \mathbf{F} $ è conservativo, allora:
+			Se un campo vettoriale $ \mathbf{F}(\vec{x}) $ è conservativo, allora:
 			\begin{itemize}
-				\item Se $ \gamma $ è un arco chiuso e regolare a tratti, allora $ \int_{\gamma } \mathbf{F} \cdot d\mathbb{P}  =  0$
-				\item $ rot(\mathbf{F}) = \textbf{0} $
+				\item Dato $ \gamma $ un arco chiuso e regolare a tratti, allora $ \int_{\gamma } \mathbf{F}(\vec{x}) \cdot d\mathbb{P}  =  0$
+				\item $ rot(\mathbf{F}(\vec{x})) = \textbf{0} $
 			\end{itemize}
 		
 			\subsection*{Ricerca del potenziale}
 			Per trovare il potenziale di un campo conservativo si può ragionare in più modi:
 
                 \subsubsection{Metodo delle derivate parziali}
-                La definizione di potenziale di un campo vettoriale conservativo 
+                    Dato il campo $ \mathbf{F}(f_{1},f_{2},f_{3}) $ cerco la funzione $ \varphi(x,y,z) $ tale per cui $ \mathbf{F}(\vec{x}) = \nabla \varphi(x,y,z) $
+                \begin{itemize}
+                    \item Calcolo $ \varphi = \int f_{1} dx = \varphi_{1} + h(y,z)$
+                    \item Calcolo $ h(z) = \int (f_{2} - \pdv{\varphi_{1}}{}{y})dy$
+                \end{itemize} 
 				
     \section*{Serie numeriche}
         
