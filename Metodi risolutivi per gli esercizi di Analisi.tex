@@ -237,7 +237,9 @@
                     Dato il campo $ \mathbf{F}(f_{1},f_{2},f_{3}) $ cerco la funzione $ \varphi(x,y,z) $ tale per cui $ \mathbf{F}(\vec{x}) = \nabla \varphi(x,y,z) $
                 \begin{itemize}
                     \item Calcolo $ \varphi = \int f_{1} dx = \varphi_{1} + h(y,z)$
-                    \item Calcolo $ h(z) = \int (f_{2} - \pdv{\varphi_{1}}{}{y})dy$
+                    \item Calcolo $ h(y,z) = \int (f_{2} - \pdv{\varphi_{1}}{}{y})dy$
+                    \item Ricavo $ \varphi_{2} = \varphi_{1} + h(x,y) $
+                    \item Ottengo la funzione potenziale  dalla relazione $\varphi(x,y,z) = \int  $  
                 \end{itemize} 
 				
     \section*{Serie numeriche}
