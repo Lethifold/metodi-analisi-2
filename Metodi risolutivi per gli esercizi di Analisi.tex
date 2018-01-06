@@ -76,28 +76,32 @@
 		\subsection*{Cambiamenti di coordinate}
 			\subsubsection{Polari piane}
 			$ T: \begin{cases} 
-				x=cos(\theta) \\ 
-				y=sin(\theta)
+				x=\rho cos(\theta) \\ 
+				y=\rho sin(\theta)
 			\end{cases} $
+            \\
+           	Lo jacobiano di questa trasformazione è $\mathcal{J}T=\rho $
 				\subparagraph{Casi particolarmente favorevoli}
 				Cerchio, corona circolare, "fetta di torta", "fetta di ciambella"
 			\subsubsection{Polari sferiche}
 			$ T: \begin{cases} 
-				x=sin(\varphi)cos(\theta) \\ 
-				y=sin(\varphi)sin(\theta) \\
-				z=cos(\varphi)
+				x=\rho sin(\varphi)cos(\theta) \\ 
+				y=\rho sin(\varphi)sin(\theta) \\
+				z=\rho cos(\varphi)
 			\end{cases} $
-			\\ \\
+			\\
 			Lo jacobiano di questa trasformazione è $\mathcal{J}T=\rho sin(\varphi) $
 			
 				\subparagraph{Casi particolarmente favorevoli}
+                Sfera, "spicchio"
+                
 			\subsubsection{Cilindriche}
 			$ \begin{cases} 
-			x=cos(\theta) \\ 
-			y=sin(\theta) \\
+			x=\rho cos(\theta) \\ 
+			y=\rho sin(\theta) \\
 			z=t
 			\end{cases} $
-			\\ \\
+			\\
 			Lo jacobiano di questa trasformazione è $\mathcal{J}T=\rho $
 			
 				\subparagraph{Casi particolarmente favorevoli}
