@@ -10,6 +10,7 @@
 
 
 %Nuovi comandi
+\newcommand{\erre}[1]{$\mathbb{R}^{#1}$}
 \newcommand{\pdv}[3]{\frac{\partial^{#2} #1}{\partial #3^{#2}}}
 \newcommand{\norm}[1]{ \left\lVert {#1} \right\rVert}
 
@@ -17,17 +18,20 @@
     \section*{Funzioni scalari di base}
     
         \subsection*{Forma quadratica $ z = ax^{2} + by^{2}$}
-            \subsubsection{Paraboloide ellittico}
-                TO DO
-            \subsubsection{Paraboloide iperbolico}
-                TO DO
-            \subsubsection{Cilindro}
-                TO DO
+        Esaminiamo gli insiemi di livello: $\{(x,y):ax^2+by^2=k\}$
+            \subparagraph{Paraboloide ellittico:}
+                $a$ e $b$ dello stesso segno
+            \subparagraph{Paraboloide iperbolico:}
+                $a$ e $b$ discordi
+            \subparagraph{Cilindro:}
+				$a=0$ oppure $b=0$
                 
-        \subsection*{Funzioni radiali}
-            TO DO
-        \subsection*{Superfici di rotazione}
-            TO DO   
+		\subsection*{Superfici di rotazione}
+			Un superficie di rotazione è generata a partire da una curva in \erre{2} e fatta ruotare intorno a un asse (ad esempio $z$). L'equazione cartesiana prende questa forma:
+		\[\begin{cases}
+			f(x,z)=0\\
+			y=0					
+		\end{cases}\]
             
     \section*{Calcolo differenziale in più variabili}
     
@@ -61,7 +65,7 @@
 				\[ \iint_{\mathcal{D}} f(x,y) = \int_{x_{A}}^{x_{B}} \Big(\int_{y_{A}}^{y_{B}}f(x,y) dy\Big) dx \]
 				
 		\subsection*{Integrali tripli}
-		Nel caso di integrali tripli, come per i doppi, l'integrazione permette di ricavare un ``volume'', tuttavia in questo caso l'integrale rappresenterà un ``volume'' non più in $ \mathbb{R}^{3} $, bensì in $ \mathbb{R}^{4} $. Dato che non è facile immaginarsi un volume in $\mathbb{R}^{4}$ è più congeniale pensare a $f(x,y,z)$ come una funzione che descrive l'andamento della massa nel solido e di voler calcolare la massa totale di quest'ultimo (cfr. \textit{Applicazioni alla fisica}).
+		Nel caso di integrali tripli, come per i doppi, l'integrazione permette di ricavare un ``volume'', tuttavia in questo caso l'integrale rappresenterà un ``volume'' non più in \erre{3}, bensì in \erre{4}. Dato che non è facile immaginarsi un volume in $\mathbb{R}^{4}$ è più congeniale pensare a $f(x,y,z)$ come una funzione che descrive l'andamento della massa nel solido e di voler calcolare la massa totale di quest'ultimo (cfr. \textit{Applicazioni alla fisica}).
 		Questo tipo di integrali può essere svolto in due modi.
 			\subsubsection{Per fili}
 			Per immaginarsi l'integrazione per fili è utile pensare di trovare prima il volume di uno spaghetto verticale infinitamente sottile che è lungo esattamente quanto il contenitore dentro al quale si trova, ovvero l'insieme $\mathcal{P}$ e poi di sommare tutti gli spaghetti nel contenitore per trovare il volume del contenitore.
