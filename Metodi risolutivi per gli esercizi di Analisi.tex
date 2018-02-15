@@ -1,48 +1,62 @@
 \documentclass[10pt,a4paper]{report}
 \usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
-\author{Fabio Baldo}
-\title{Procedimenti risolutivi per esercizi per Analisi II}
+\author{Baldo Fabio \and Ceriani Luca\\[12pt]}
+\title{\textbf{Procedimenti risolutivi per esercizi per Analisi II}}
+
+\setlength{\parindent}{0cm} % non indentare un nuovo paragrafo
 
 
 %Nuovi comandi
 \newcommand{\erre}[1]{$\mathbb{R}^{#1}$}
 \newcommand{\pdv}[3]{\frac{\partial^{#2} #1}{\partial #3^{#2}}}
-\newcommand{\norm}[1]{ \left\lVert {#1} \right\rVert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
 
 \begin{document}
-    \section*{Funzioni scalari di base}
-    
-        \subsection*{Forma quadratica $ z = ax^{2} + by^{2}$}
-        Esaminiamo gli insiemi di livello: $\{(x,y):ax^2+by^2=k\}$
-            \subparagraph{Paraboloide ellittico:}
-                $a$ e $b$ dello stesso segno
-            \subparagraph{Paraboloide iperbolico:}
-                $a$ e $b$ discordi
-            \subparagraph{Cilindro:}
-				$a=0$ oppure $b=0$
-                
-		\subsection*{Superfici di rotazione}
-			Un superficie di rotazione è generata a partire da una curva in \erre{2} e fatta ruotare intorno a un asse (ad esempio $z$). L'equazione cartesiana prende questa forma:
-		\[\begin{cases}
-			f(x,z)=0\\
-			y=0					
-		\end{cases}\]
-            
-    \section*{Calcolo differenziale in più variabili}
-    
-        \subsection*{Derivata parziale}
-            TO DO
-        \subsection*{Derivata direzionale}
-            TO DO        
-        \subsection*{Derivata totale}
-            TO DO    
-	\section*{Integrazione}
-	
+\begin{center}
+	{
+	\vspace*{1cm}
+	\large
+	Baldo Fabio \hspace{2cm} Ceriani Luca\\[1cm]
+	\LARGE
+	\textbf{Procedimenti risolutivi per esercizi di Analisi II}\\[1cm]
+	\large\today\\[2cm]
+	}
+\end{center}
+
+%    \section*{Funzioni scalari di base}
+%    
+%        \subsection*{Forma quadratica $ z = ax^{2} + by^{2}$}
+%        Esaminiamo gli insiemi di livello: $\{(x,y):ax^2+by^2=k\}$
+%            \subparagraph{Paraboloide ellittico:}
+%                $a$ e $b$ dello stesso segno
+%            \subparagraph{Paraboloide iperbolico:}
+%                $a$ e $b$ discordi
+%            \subparagraph{Cilindro:}
+%				$a=0$ oppure $b=0$
+%                
+%		\subsection*{Superfici di rotazione}
+%			Un superficie di rotazione è generata a partire da una curva in \erre{2} e fatta ruotare intorno a un asse (ad esempio $z$). L'equazione cartesiana prende questa forma:
+%		\[\begin{cases}
+%			f(x,z)=0\\
+%			y=0					
+%		\end{cases}\]
+%            
+%    \section*{Calcolo differenziale in più variabili}
+%    
+%        \subsection*{Derivata parziale}
+%            TO DO
+%        \subsection*{Derivata direzionale}
+%            TO DO        
+%        \subsection*{Derivata totale}
+%            TO DO    
+%	\section*{Integrazione}
+%	
 		\subsection*{Integrali doppi}
 			Gli Integrali doppi su un certo insieme $ \mathcal{D} $ (misurabile) permettono di trovare
 			\[ \iint_{\mathcal{D}} f(x,y)dxdy \; = \; \text{Volume racchiuso tra la funzione integranda ($ f(x,y) $) e il piano $ xOy $} \]
@@ -103,8 +117,8 @@
 		\subsection*{Cambiamenti di coordinate}
 			\subsubsection{Polari piane}
 			$ T: \begin{cases} 
-				x=\rho cos(\theta) \\ 
-				y=\rho sin(\theta)
+				x=\rho \cos(\theta) \\ 
+				y=\rho \sin(\theta)
 			\end{cases} $
             \\
            	Lo jacobiano di questa trasformazione è $\mathcal{J}T=\rho $
@@ -112,20 +126,20 @@
 				Cerchio, corona circolare, "fetta di torta", "fetta di ciambella"
 			\subsubsection{Polari sferiche}
 			$ T: \begin{cases} 
-				x=\rho sin(\varphi)cos(\theta) \\ 
-				y=\rho sin(\varphi)sin(\theta) \\
-				z=\rho cos(\varphi)
+				x=\rho \sin(\varphi)\cos(\theta) \\ 
+				y=\rho \sin(\varphi)\sin(\theta) \\
+				z=\rho \cos(\varphi)
 			\end{cases} $
 			\\
-			Lo jacobiano di questa trasformazione è $\mathcal{J}T=\rho sin(\varphi) $
+			Lo jacobiano di questa trasformazione è $\mathcal{J}T=\rho \sin(\varphi) $
 			
 				\subparagraph{Casi particolarmente favorevoli}
                 Sfera, "spicchio"
                 
 			\subsubsection{Cilindriche}
-			$ \begin{cases} 
-			x=\rho cos(\theta) \\ 
-			y=\rho sin(\theta) \\
+			$ T: \begin{cases} 
+			x=\rho \cos(\theta) \\ 
+			y=\rho \sin(\theta) \\
 			z=t
 			\end{cases} $
 			\\
@@ -162,7 +176,7 @@
 		\subsection*{Integrali \textbf{superficiali}}
 			\begin{enumerate}
 				\item Parametrizzo la superficie $ \Sigma $ sulla quale voglio integrare
-				\item Determino la normale alla superficie $\norm{\mathbf{N}(u,v)} $ sapendo che \\
+				\item Determino la normale alla superficie $\norm{\mathbf{N}(u,v)} $ sapendo che
                 \[ \mathbf{N}(u,v) = det \left(\begin{array}{ccc} i & j & k\\ \pdv{\Sigma_{i} }{}{u} & \pdv{\Sigma_{j}}{}{u} & \pdv{\Sigma_{k}}{}{u} \\ \pdv{\Sigma_{i}}{}{v} & \pdv{\Sigma_{j}}{}{v} & \pdv{\Sigma_{k}}{}{v} \end{array}\right) \]
 				\item Calcola la composta $f(\mathbf{\sigma} (u,v))$
 				\item Calcolo l'integrale secondo la relazione:
@@ -253,7 +267,7 @@
 			\begin{itemize}
                 \item $ \mathbf{F}(\vec{x}) $ deve ammettere un potenziale $ \varphi $ tale che $ \mathbf{F}(\vec{x})= \nabla \varphi$
 				\item Se $ \gamma $ è un arco chiuso e regolare a tratti, allora $ \oint_{\gamma } \mathbf{F}(\vec{x}) \cdot d\mathbb{P}  =  0$
-				\item Il campo $ \mathbf{F}(\vec{x}) $ sia definito su di un insieme $ \Omega $ \textit{\textbf{semplicemente connesso}}, (nel quale una qualunque $ \gamma(t) $) chiusa racchiuda un sottoinsieme totalmente contenuto in $ \Omega $ e che $ rot(\mathbf{F}(\vec{x})) = \textbf{0} $ \\ 
+				\item Il campo $ \mathbf{F}(\vec{x}) $ sia definito su di un insieme $ \Omega $ \textit{\textbf{semplicemente connesso}}, (nel quale una qualunque $ \gamma(t) $) chiusa racchiuda un sottoinsieme totalmente contenuto in $ \Omega $ e che $ rot(\mathbf{F}(\vec{x})) = \textbf{0} $ 
 			\end{itemize}
 			Se un campo vettoriale $ \mathbf{F}(\vec{x}) $ è conservativo, allora:
 			\begin{itemize}
@@ -273,24 +287,36 @@
                     \item Ottengo la funzione potenziale  dalla relazione $\varphi(x,y,z) = \int  $  
                 \end{itemize} 
 				
-    \section*{Serie numeriche}
-        
-                
-            \subsection*{Serie a termini positivi}
+\section*{Serie numeriche}
+\subsection*{Serie a termini positivi}
 
-                \subsubsection{Criterio del confronto}
-                Per poter dimostrare che una serie converge utilizzando il criterio del confronto è necessario trovare una serie (più facile) maggiorante della serie di partenza. Infatti il criterio permette di dimostrare la convergenza della serie di partenza nel caso in cui la serie maggiorante risulti essere convergente.
-                \subsubsection{Criterio del confronto asintotico}
-                Questo criterio permette di determinare la convergenza oppure divergenza di una serie nel caso in cui si trovi una serie con stesso ordine di grandezza della serie di partenza. In questo caso è intuitivo il fatto che entrambe le serie in analisi si comportino allo stesso modo.
-                \subsubsection{Criterio del rapporto}
-                Per poter determinare una convergenza oppure divergenza di una serie mediante questo criterio è necessario risolvere il limite seguente \[ \lim_{n \to \infty} \frac{a_{n+1}}{a_{n}} =l \] Nel caso in cui $ l < 1 $ la serie converge, mentre nel caso in cui $ l > 1 $ la serie diverge.
-                \subsubsection{Criterio della radice}
-                Questo criterio è molto simile al criterio del rapporto. Infatti è necessario anche in questo caso risolvere un limite \[ \lim_{n \to \infty} \sqrt[n]{a_{n}} = l \] Nel caso in cui $ l < 1 $ la serie converge, mentre nel caso in cui $ l > 1 $ la serie diverge.
-                \subsubsection{Criterio di McLaurin}
-                Data una serie necessariamente positiva, continua e decrescente. Ponendo $ f(n) = a_{n} $ allora si ha che la serie $ \sum_{n=1}^{\infty} a_{n} $ e l'integrale $ \int_{1}^{\infty} f(x)dx $ hanno lo stesso comportamento 
+\subsubsection{Criterio del confronto}
+ Per poter dimostrare che una serie converge utilizzando il criterio del confronto è necessario trovare una serie (più facile) maggiorante della serie di partenza. Infatti il criterio permette di dimostrare la convergenza della serie di partenza nel caso in cui la serie maggiorante risulti essere convergente.
+\subsubsection{Criterio del confronto asintotico}
+Questo criterio permette di determinare la convergenza oppure divergenza di una serie nel caso in cui si trovi una serie con stesso ordine di grandezza della serie di partenza. In questo caso è intuitivo il fatto che entrambe le serie in analisi si comportino allo stesso modo.
+\subsubsection{Criterio del rapporto}
+Per poter determinare una convergenza oppure divergenza di una serie mediante questo criterio è necessario risolvere il limite seguente \[ \lim_{n \to \infty} \frac{a_{n+1}}{a_{n}} =L \] Nel caso in cui $ L < 1 $ la serie converge, mentre nel caso in cui $ L > 1 $ la serie diverge.
+\subsubsection{Criterio della radice}
+Questo criterio è molto simile al criterio del rapporto. Infatti è necessario anche in questo caso risolvere un limite \[ \lim_{n \to \infty} \sqrt[n]{a_{n}} = L \] Nel caso in cui $ L < 1 $ la serie converge, mentre nel caso in cui $ L > 1 $ la serie diverge.
+\subsubsection{Criterio di McLaurin}
+Data una serie necessariamente positiva, continua e decrescente. Ponendo $ f(n) = a_{n} $ allora si ha che la serie $ \sum_{n=1}^{\infty} a_{n} $ e l'integrale $ \int_{1}^{\infty} f(x)dx $ hanno lo stesso comportamento 
                 
-            \subsection*{Serie a termini di segno variabile}
+\subsection*{Serie a termini di segno variabile}
                 
-                \subsubsection{Teorema della convergenza assoluta}
-                Se una serie è assolutamente convergente ovvero si ha la convergenza della serie $ \sum_{n=1}^{\infty} |a_{n}| $ allora la serie $ \sum_{n=1}^{\infty} a_{n} $ è anche convergente
+\subsubsection{Teorema della convergenza assoluta}
+Se una serie è assolutamente convergente ovvero si ha la convergenza della serie $ \sum_{n=1}^{\infty} |a_{n}| $ allora la serie $ \sum_{n=1}^{\infty} a_{n} $ è anche convergente
+
+\subsection*{Serie di potenze}
+Una serie di potenze centrata in $x_0$ è definita come
+\[\sum_{n=0}^\infty a_n (x-x_0)^n\]
+Si chiama raggio di convergenza l'estremo superiore dell'insieme di tutti i numeri reali per i quali la serie di potenze converge. Detto $R$ il raggio di convergenza si dirà che la serie converge per $(-R,\,R)$. \medskip
+
+Per il calcolo del raggio di convergenza si possono usare i due criteri citati sopra (\textbf{rapporto} e \textbf{convergenza}) con l'accortezza, trattandosi di criteri per serie a termini positivi di prendere il modulo dell'argomento del limite. I due criteri diventano:
+\[
+\lim_{n \to \infty} \left\lvert\frac{a_{n+1}}{a_{n}}\right\rvert = L\,,\qquad
+\lim_{n \to \infty} \sqrt[n]{\lvert a_{n}\rvert} = L
+ \]
+Applicando un criterio dunque si trova un valore $L$, il raggio di convergenza non è nient'altro che il reciproco di quel valore:
+\[R=\frac{1}{L}\]
+\paragraph{N.B.} Nulla si può dire però come si comporta la serie in $+R$ e $-R$. L'unico modo per scoprirlo è andare a studiare le serie ponendo una volta $x=R$, l'altra $x=-R$.
 \end{document}
