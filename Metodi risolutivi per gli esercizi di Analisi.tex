@@ -59,9 +59,9 @@
 %	
 		\subsection*{Integrali doppi}
 			Gli Integrali doppi su un certo insieme $ \mathcal{D} $ (misurabile) permettono di trovare
-			\[ \iint_{\mathcal{D}} f(x,y)dxdy \; = \; \text{Volume racchiuso tra la funzione integranda ($ f(x,y) $) e il piano $ xOy $} \]
+			\[ \iint_{\mathcal{D}} f(x,y)dxdy \; = \; \textrm{Volume racchiuso tra la funzione integranda } f(x,y) \textrm{ e il piano } xOy \]
 			Nel caso in cui si abbia $ f(x,y) = 1 $ allora 
-			\[ \iint_{\mathcal{D}} dxdy \; = \; \text{ Area dell'insieme $\mathcal{D}$  }\]
+			\[ \iint_{\mathcal{D}} dxdy \; = \; \text{Area dell'insieme $\mathcal{D}$  }\]
 			I procedimenti che permettono di calcolare gli integrali doppi sono due
 				\subsubsection{Per orizzontali}
 				\begin{enumerate}
@@ -123,7 +123,7 @@
             \\
            	Lo jacobiano di questa trasformazione è $\mathcal{J}T=\rho $
 				\subparagraph{Casi particolarmente favorevoli}
-				Cerchio, corona circolare, "fetta di torta", "fetta di ciambella"
+				Cerchio, corona circolare, ``fetta di torta'', ``fetta di ciambella''
 			\subsubsection{Polari sferiche}
 			$ T: \begin{cases} 
 				x=\rho \sin(\varphi)\cos(\theta) \\ 
@@ -134,7 +134,7 @@
 			Lo jacobiano di questa trasformazione è $\mathcal{J}T=\rho \sin(\varphi) $
 			
 				\subparagraph{Casi particolarmente favorevoli}
-                Sfera, "spicchio"
+                Sfera, ``spicchio''
                 
 			\subsubsection{Cilindriche}
 			$ T: \begin{cases} 
@@ -239,7 +239,7 @@
 						\item Sia $ \Omega_{0} $ un aperto limitato la cui frontiera è $ \delta \Omega_{0} $
 					\end{itemize}
 				\subparagraph{Teorema}
-				\[ \int_{\delta \Omega_{0}} \mathbf{F}(\vec{x}) \cdot \mathbf{n} dS = \int_{\Omega_{0}} div(\mathbf{F}(\vec{x})) dxdydz \]
+				\[ \int_{\delta \Omega_{0}} \mathbf{F}(\vec{x}) \cdot \mathbf{n} dS = \int_{\Omega_{0}} \textrm{div}(\mathbf{F}(\vec{x})) dxdydz \]
 			
 			\subsubsection{Stokes}
 			
@@ -251,7 +251,7 @@
 					\item Sia $ \sigma_{0} = \sigma(K) $ la calotta relativa a K e $ \delta \sigma_{0} $ l'arco detto bordo della calotta $ \sigma_{0} $  il cui verso di percorrenza è dato dalla regola della mano destra  rispetto alla normale alla calotta
 				\end{itemize}
 				\subparagraph{Teorema}
-				\[ \int_{\delta \sigma_{0}} \mathbf{F}(\vec{x})(P) \cdot d \mathbf{P} = \int_{ \sigma_{0}} rot(\mathbf{F}(\vec{x})) \cdot d S\]
+				\[ \int_{\delta \sigma_{0}} \mathbf{F}(\vec{x})(P) \cdot d \mathbf{P} = \int_{ \sigma_{0}} \textrm{rot}(\mathbf{F}(\vec{x})) \cdot d S\]
 
 
 
@@ -267,12 +267,12 @@
 			\begin{itemize}
                 \item $ \mathbf{F}(\vec{x}) $ deve ammettere un potenziale $ \varphi $ tale che $ \mathbf{F}(\vec{x})= \nabla \varphi$
 				\item Se $ \gamma $ è un arco chiuso e regolare a tratti, allora $ \oint_{\gamma } \mathbf{F}(\vec{x}) \cdot d\mathbb{P}  =  0$
-				\item Il campo $ \mathbf{F}(\vec{x}) $ sia definito su di un insieme $ \Omega $ \textit{\textbf{semplicemente connesso}}, (nel quale una qualunque $ \gamma(t) $) chiusa racchiuda un sottoinsieme totalmente contenuto in $ \Omega $ e che $ rot(\mathbf{F}(\vec{x})) = \textbf{0} $ 
+				\item Il campo $ \mathbf{F}(\vec{x}) $ sia definito su di un insieme $ \Omega $ \textit{\textbf{semplicemente connesso}}, (nel quale una qualunque $ \gamma(t) $) chiusa racchiuda un sottoinsieme totalmente contenuto in $ \Omega $ e che $ \textrm{rot}(\mathbf{F}(\vec{x})) = \textbf{0} $ 
 			\end{itemize}
 			Se un campo vettoriale $ \mathbf{F}(\vec{x}) $ è conservativo, allora:
 			\begin{itemize}
 				\item Dato $ \gamma $ un arco chiuso e regolare a tratti, allora $ \int_{\gamma } \mathbf{F}(\vec{x}) \cdot d\mathbb{P}  =  0$
-				\item $ rot(\mathbf{F}(\vec{x})) = \textbf{0} $
+				\item $ \textrm{rot}(\mathbf{F}(\vec{x})) = \textbf{0} $
 			\end{itemize}
 		
 			\subsection*{Ricerca del potenziale}
@@ -299,7 +299,7 @@ Per poter determinare una convergenza oppure divergenza di una serie mediante qu
 \subsubsection{Criterio della radice}
 Questo criterio è molto simile al criterio del rapporto. Infatti è necessario anche in questo caso risolvere un limite \[ \lim_{n \to \infty} \sqrt[n]{a_{n}} = L \] Nel caso in cui $ L < 1 $ la serie converge, mentre nel caso in cui $ L > 1 $ la serie diverge.
 \subsubsection{Criterio di McLaurin}
-Data una serie necessariamente positiva, continua e decrescente. Ponendo $ f(n) = a_{n} $ allora si ha che la serie $ \sum_{n=1}^{\infty} a_{n} $ e l'integrale $ \int_{1}^{\infty} f(x)dx $ hanno lo stesso comportamento 
+Data una serie necessariamente positiva, continua e decrescente. Ponendo $ f(n) = a_{n} $ allora si ha che la serie $ \sum_{n=1}^{\infty} a_{n} $ e l'integrale $ \int_{1}^{\infty} f(x)dx $ hanno lo stesso comportamento.
                 
 \subsection*{Serie a termini di segno variabile}
                 
@@ -318,5 +318,10 @@ Per il calcolo del raggio di convergenza si possono usare i due criteri citati s
  \]
 Applicando un criterio dunque si trova un valore $L$, il raggio di convergenza non è nient'altro che il reciproco di quel valore:
 \[R=\frac{1}{L}\]
-\paragraph{N.B.} Nulla si può dire però come si comporta la serie in $+R$ e $-R$. L'unico modo per scoprirlo è andare a studiare le serie ponendo una volta $x=R$, l'altra $x=-R$.
+\paragraph{N.B.} Nulla si può dire su come si comporta la serie in $+R$ e $-R$. L'unico modo per scoprirlo è andare a studiare le serie ponendo una volta $x=R$, l'altra $x=-R$.
+
+\subsection*{Identità di Parseval}
+Per una $f$ periodica di periodo $2\pi$ integrabile su $[-\pi,\,\pi]$ allora vale
+\[\lVert f\rVert _2^2 = 2\pi a_0^2 + \pi\sum_{k=1}^\infty (a_k^2+b_k^2)\]
+
 \end{document}
